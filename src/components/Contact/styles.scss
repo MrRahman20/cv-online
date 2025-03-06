@@ -2,71 +2,8 @@
 
 .contact {
   &__content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: $spacing-lg;
-    max-width: 1000px;
+    max-width: 600px;
     margin: 0 auto;
-
-    @media (max-width: $breakpoint-md) {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  &__info {
-    .info-item {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: $spacing-lg;
-      padding: $spacing-md;
-      background: rgba($primary-color, 0.05);
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: translateY(-2px);
-      }
-
-      i {
-        font-size: 1.5rem;
-        color: $primary-color;
-        margin-right: $spacing-md;
-        width: 24px;
-        text-align: center;
-
-        &.fa-whatsapp {
-          color: #25D366;
-        }
-      }
-
-      h3 {
-        font-size: 1.1rem;
-        margin-bottom: $spacing-sm;
-        color: $primary-color;
-      }
-
-      p {
-        color: $text-color;
-      }
-
-      a {
-        color: $text-color;
-        text-decoration: none;
-        transition: color 0.3s ease;
-
-        &:hover {
-          color: $primary-color;
-        }
-
-        &[href*="wa.me"] {
-          color: #25D366;
-          
-          &:hover {
-            color: darken(#25D366, 10%);
-          }
-        }
-      }
-    }
   }
 
   &__form {
@@ -124,32 +61,6 @@
 // Dark mode styles
 .dark-mode {
   .contact {
-    &__info {
-      .info-item {
-        background: $dark-surface;
-
-        h3 {
-          color: $dark-primary;
-        }
-
-        p {
-          color: $dark-text;
-        }
-
-        i {
-          color: $dark-primary;
-        }
-
-        a {
-          color: $dark-text;
-
-          &[href*="wa.me"] {
-            color: #25D366;
-          }
-        }
-      }
-    }
-
     &__form {
       background: $dark-surface;
 

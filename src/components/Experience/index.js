@@ -8,7 +8,6 @@ const Experience = () => {
       position: 'Data Entry',
       location: 'Jakarta',
       startDate: '2024',
-      endDate: '2024',
       description: 'Melakukan verifikasi NIK antara sertifikasi dengan disdukcapil RI lalu melakukan input data ke sistem SIVA (Sistem Informasi Aset Daerah).'
     },
     {
@@ -16,7 +15,6 @@ const Experience = () => {
       position: 'IT Support',
       location: 'Bogor',
       startDate: '2023',
-      endDate: '2023',
       description: 'Melakukan troubleshooting jaringan, konfigurasi perangkat, pemeliharaan sistem komunikasi berbasis GPS dan Instalasi modem yang tersebar di JABODETABEK.'
     },
     {
@@ -41,7 +39,9 @@ const Experience = () => {
               <h3>{exp.position}</h3>
               <h4>{exp.company}</h4>
               <p className="location">{exp.location}</p>
-              <p className="date">{exp.startDate} - {exp.endDate}</p>
+              <p className="date">
+                {exp.endDate ? `${exp.startDate} - ${exp.endDate}` : exp.startDate}
+              </p>
               <p className="description">{exp.description}</p>
             </div>
           ))}
