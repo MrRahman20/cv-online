@@ -1,0 +1,172 @@
+@import '../../styles/variables';
+
+.contact {
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: $spacing-lg;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info {
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: $spacing-lg;
+      padding: $spacing-md;
+      background: rgba($primary-color, 0.05);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+
+      i {
+        font-size: 1.5rem;
+        color: $primary-color;
+        margin-right: $spacing-md;
+        width: 24px;
+        text-align: center;
+
+        &.fa-whatsapp {
+          color: #25D366;
+        }
+      }
+
+      h3 {
+        font-size: 1.1rem;
+        margin-bottom: $spacing-sm;
+        color: $primary-color;
+      }
+
+      p {
+        color: $text-color;
+      }
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+
+        &[href*="wa.me"] {
+          color: #25D366;
+          
+          &:hover {
+            color: darken(#25D366, 10%);
+          }
+        }
+      }
+    }
+  }
+
+  &__form {
+    background: white;
+    padding: $spacing-lg;
+    border-radius: 8px;
+    box-shadow: $card-shadow;
+
+    .form-group {
+      margin-bottom: $spacing-md;
+
+      label {
+        display: block;
+        margin-bottom: $spacing-sm;
+        color: $text-color;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: $spacing-sm;
+        border: 1px solid rgba($primary-color, 0.2);
+        border-radius: 4px;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          outline: none;
+          border-color: $primary-color;
+        }
+      }
+
+      textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+    }
+
+    .submit-button {
+      width: 100%;
+      padding: $spacing-sm $spacing-lg;
+      background: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+// Dark mode styles
+.dark-mode {
+  .contact {
+    &__info {
+      .info-item {
+        background: $dark-surface;
+
+        h3 {
+          color: $dark-primary;
+        }
+
+        p {
+          color: $dark-text;
+        }
+
+        i {
+          color: $dark-primary;
+        }
+
+        a {
+          color: $dark-text;
+
+          &[href*="wa.me"] {
+            color: #25D366;
+          }
+        }
+      }
+    }
+
+    &__form {
+      background: $dark-surface;
+
+      label {
+        color: $dark-text;
+      }
+
+      input,
+      textarea {
+        background: rgba($dark-text, 0.1);
+        border-color: rgba($dark-primary, 0.3);
+        color: $dark-text;
+
+        &:focus {
+          border-color: $dark-primary;
+        }
+      }
+    }
+  }
+}

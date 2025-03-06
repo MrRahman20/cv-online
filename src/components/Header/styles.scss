@@ -1,0 +1,140 @@
+@import '../../styles/variables';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: $spacing-md 0;
+  background-color: rgba($background-color, 0.95);
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav {
+    display: flex;
+    gap: $spacing-md;
+    align-items: center;
+
+    @media (max-width: $breakpoint-md) {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: rgba($background-color, 0.95);
+      padding: $spacing-md;
+      flex-direction: column;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      
+      &.open {
+        transform: translateX(0);
+      }
+    }
+
+    .nav-item {
+      color: $text-color;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    position: relative;
+
+    @media (max-width: $breakpoint-md) {
+      display: block;
+    }
+
+    span, 
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: $primary-color;
+      transition: all 0.3s ease;
+    }
+
+    span {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &.menu-open {
+    .nav {
+      transform: translateX(0);
+    }
+
+    .menu-toggle {
+      span {
+        opacity: 0;
+      }
+
+      &::before {
+        transform: translateY(10px) rotate(45deg);
+      }
+
+      &::after {
+        transform: translateY(-10px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+// Dark mode styles
+.dark-mode {
+  .header {
+    background-color: rgba($dark-background, 0.95);
+
+    .nav {
+      @media (max-width: $breakpoint-md) {
+        background: rgba($dark-background, 0.95);
+      }
+    }
+
+    .nav-item {
+      color: $dark-text;
+    }
+
+    .menu-toggle {
+      span,
+      &::before,
+      &::after {
+        background: $dark-text;
+      }
+    }
+  }
+}

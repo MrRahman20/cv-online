@@ -1,0 +1,89 @@
+@import '../../styles/variables';
+
+.experience {
+  &__timeline {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    padding: $spacing-md;
+    border-left: 3px solid $primary-color;
+    margin-bottom: $spacing-lg;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: $primary-color;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: $spacing-sm;
+      color: $primary-color;
+    }
+
+    h4 {
+      color: $secondary-color;
+      margin-bottom: $spacing-sm;
+    }
+
+    .date {
+      font-style: italic;
+      color: $secondary-color;
+      margin-bottom: $spacing-md;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .location {
+      color: $secondary-color;
+      font-size: 0.9rem;
+      margin-bottom: $spacing-sm;
+    }
+
+    .description {
+      white-space: pre-line;
+      line-height: 1.6;
+    }
+  }
+}
+
+// Dark mode styles
+.dark-mode {
+  .experience__item {
+    border-left-color: $dark-primary;
+
+    &::before {
+      background: $dark-primary;
+    }
+
+    h3 {
+      color: $dark-primary;
+    }
+
+    h4 {
+      color: $dark-text;
+    }
+
+    .date, .location {
+      color: $dark-secondary;
+    }
+
+    .description {
+      color: $dark-text;
+    }
+
+    p {
+      color: $dark-text;
+    }
+  }
+}

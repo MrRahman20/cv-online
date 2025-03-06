@@ -1,0 +1,66 @@
+@import '../../styles/variables';
+
+.skills {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: $spacing-lg;
+    margin-top: $spacing-lg;
+  }
+
+  &__category {
+    background: rgba($primary-color, 0.05);
+    padding: $spacing-md;
+    border-radius: 8px;
+    height: 100%;
+
+    h3 {
+      color: $primary-color;
+      margin-bottom: $spacing-md;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-bottom: 2px solid rgba($primary-color, 0.2);
+      padding-bottom: $spacing-sm;
+    }
+
+    ul {
+      list-style: none;
+      
+      li {
+        margin-bottom: $spacing-sm;
+        padding-left: $spacing-md;
+        position: relative;
+        line-height: 1.4;
+
+        &::before {
+          content: "•";
+          color: $primary-color;
+          font-weight: bold;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+// Dark mode styles
+.dark-mode {
+  .skills__category {
+    background: $dark-surface;
+    border: 1px solid rgba($dark-text, 0.1);
+
+    h3 {
+      color: $dark-primary;
+      border-bottom: 2px solid rgba($dark-primary, 0.3);
+    }
+
+    ul li {
+      color: $dark-text;
+
+      &::before {
+        color: $dark-primary;
+      }
+    }
+  }
+}

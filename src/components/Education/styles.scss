@@ -1,0 +1,209 @@
+@import '../../styles/variables';
+
+.education {
+  &__timeline {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    padding: $spacing-md;
+    border-left: 3px solid $primary-color;
+    margin-bottom: $spacing-md;
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: $primary-color;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: $spacing-sm;
+    }
+
+    h4 {
+      color: $secondary-color;
+      margin-bottom: $spacing-sm;
+    }
+
+    .date {
+      font-style: italic;
+      color: $secondary-color;
+      margin-bottom: $spacing-sm;
+    }
+
+    .organizations {
+      margin-top: $spacing-lg;
+
+      h4 {
+        color: $primary-color;
+        margin-bottom: $spacing-md;
+        font-size: 1.2rem;
+      }
+
+      .organization-item {
+        margin-bottom: $spacing-md;
+        padding-left: $spacing-md;
+        border-left: 2px solid rgba($primary-color, 0.3);
+
+        h5 {
+          font-size: 1.1rem;
+          color: $text-color;
+          margin-bottom: $spacing-sm;
+        }
+
+        .role {
+          color: $secondary-color;
+          font-weight: 500;
+          margin-bottom: 4px;
+        }
+
+        .period {
+          color: $secondary-color;
+          font-style: italic;
+          font-size: 0.9rem;
+          margin-bottom: $spacing-sm;
+        }
+
+        ul {
+          list-style-type: disc;
+          margin-left: $spacing-md;
+          
+          li {
+            margin-bottom: 4px;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+
+  &__section {
+    margin-top: $spacing-lg;
+    padding-top: $spacing-lg;
+    border-top: 1px solid rgba($primary-color, 0.2);
+
+    .section-subtitle {
+      color: $primary-color;
+      font-size: 1.4rem;
+      margin-bottom: $spacing-md;
+    }
+  }
+
+  .certification-item, .achievement-item {
+    padding: $spacing-md;
+    background: rgba($primary-color, 0.05);
+    border-radius: 8px;
+    margin-bottom: $spacing-md;
+
+    h4 {
+      color: $text-color;
+      font-size: 1.1rem;
+      margin-bottom: $spacing-sm;
+    }
+
+    .issuer {
+      color: $secondary-color;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      margin-bottom: $spacing-sm;
+    }
+
+    .date, .year {
+      font-style: italic;
+      color: $secondary-color;
+      font-size: 0.9rem;
+    }
+  }
+
+  // Dark mode styles
+  .dark-mode & {
+    .certification-item, .achievement-item {
+      background: rgba($primary-color, 0.1);
+    }
+  }
+}
+
+.dark-mode {
+  .education {
+    &__item {
+      h3, h4 {
+        color: $dark-text;
+      }
+
+      .date {
+        color: $dark-secondary;
+      }
+    }
+
+    .certification-item, .achievement-item {
+      background: $dark-surface;
+      border: 1px solid rgba($dark-text, 0.1);
+
+      h4 {
+        color: $dark-text;
+      }
+
+      .issuer, .date, .year {
+        color: $dark-secondary;
+      }
+    }
+  }
+}
+
+.dark-mode {
+  .education {
+    &__item {
+      border-left-color: $dark-primary;
+
+      &::before {
+        background: $dark-primary;
+      }
+
+      h3, h4, p {
+        color: $dark-text;
+      }
+
+      .date, .period {
+        color: $dark-secondary;
+      }
+
+      .organizations {
+        h4 {
+          color: $dark-primary;
+        }
+
+        .organization-item {
+          border-left-color: rgba($dark-primary, 0.3);
+
+          h5 {
+            color: $dark-text;
+          }
+
+          .role {
+            color: $dark-text;
+          }
+
+          .period {
+            color: $dark-secondary;
+          }
+
+          ul li {
+            color: $dark-text;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+
+.footer {
+  background-color: lighten($dark-background, 5%);
+  color: $dark-text;
+  padding: $spacing-lg 0;
+
+  &__content {
+    text-align: center;
+  }
+
+  &__social {
+    margin-bottom: $spacing-md;
+
+    a {
+      color: $dark-text;
+      text-decoration: none;
+      margin: 0 $spacing-sm;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__copyright {
+    color: $dark-secondary;
+    font-size: 0.9rem;
+  }
+}

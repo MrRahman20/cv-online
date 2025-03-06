@@ -1,0 +1,42 @@
+// Colors
+$primary-color: #2563eb;
+$secondary-color: #475569;
+$background-color: #f8fafc;
+$text-color: #1e293b;
+
+// Dark Mode Colors - Updated for better contrast
+$dark-background: #0f172a;
+$dark-surface: #1e293b;  // New variable for card backgrounds
+$dark-text: #f1f5f9;
+$dark-secondary: #94a3b8;  // Lighter secondary color for better readability
+$dark-primary: #60a5fa;   // Lighter primary color for dark mode
+
+// Typography
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Spacing
+$spacing-base: 1rem;
+$spacing-sm: $spacing-base * 0.5;
+$spacing-md: $spacing-base * 1.5;
+$spacing-lg: $spacing-base * 2;
+
+// Animation
+$transition-speed: 0.3s;
+$animation-curve: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Blog
+$blog-card-width: 350px;
+$blog-grid-gap: $spacing-md;
+
+// New variables
+$gradient-primary: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+$card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);

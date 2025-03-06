@@ -1,0 +1,76 @@
+@import '../../styles/variables';
+
+.about {
+  &__content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: $spacing-lg;
+    align-items: center;
+
+    @media (max-width: $breakpoint-md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__text {
+    p {
+      margin-bottom: $spacing-md;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  &__info {
+    background: rgba($primary-color, 0.05);
+    padding: $spacing-md;
+    border-radius: 8px;
+
+    .info-item {
+      display: flex;
+      margin-bottom: $spacing-sm;
+      
+      span {
+        font-weight: 500;
+        width: 100px;
+        color: $primary-color;
+      }
+
+      a, p {
+        color: inherit; // Akan mengikuti warna text parent
+        text-decoration: none;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+// Dark mode styles
+.dark-mode {
+  .about {
+    &__info {
+      background: $dark-surface;
+      
+      .info-item {
+        span {
+          color: $dark-primary;
+        }
+
+        a, p {
+          color: $dark-text;
+          &:hover {
+            color: $dark-primary;
+          }
+        }
+      }
+    }
+  }
+}
