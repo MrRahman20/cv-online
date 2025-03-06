@@ -15,7 +15,7 @@ const Hero = () => {
         </div>
         <h1>Muhammad Ruhiyatna Rahman</h1>
         <h2>Software Developer | Network Engineer | GIS Analyst | AI-ML Engineer</h2>
-        <p>Saya adalah seorang Developer yang antusias untuk belajar teknologi baru.</p>
+        <p>Developer yang antusias dalam mengeksplorasi teknologi baru, terus belajar, dan beradaptasi dengan tren industri untuk menciptakan solusi inovatif.</p>
         <button className="cta-button" onClick={handleDownloadCV}>
           Unduh CV
         </button>
