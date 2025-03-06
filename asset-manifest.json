@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cv-online/static/css/main.c0f508f3.css",
+    "main.js": "/cv-online/static/js/main.87b2e92a.js",
+    "index.html": "/cv-online/index.html",
+    "main.c0f508f3.css.map": "/cv-online/static/css/main.c0f508f3.css.map",
+    "main.87b2e92a.js.map": "/cv-online/static/js/main.87b2e92a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0f508f3.css",
+    "static/js/main.87b2e92a.js"
+  ]
+}
