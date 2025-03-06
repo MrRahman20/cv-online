@@ -8,7 +8,7 @@ const Experience = () => {
       position: 'Data Entry',
       location: 'Jakarta',
       startDate: '2024',
-      endDate: 'Present',
+      endDate: '2024',
       description: 'Melakukan verifikasi NIK antara sertifikasi dengan disdukcapil RI lalu melakukan input data ke sistem SIVA (Sistem Informasi Aset Daerah).'
     },
     {

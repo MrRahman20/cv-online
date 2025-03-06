@@ -4,6 +4,12 @@ import './styles.scss';
 const Projects = () => {
   const projects = [
     {
+      title: 'Web Server dengan Linux, Nginx, dan Cloudflare Tunneling',
+      description: 'Membangun web server menggunakan Linux Ubuntu server LTS dengan Nginx sebagai reverse proxy untuk mengatur lalu lintas jaringan. Menggunakan Cloudflare Tunneling untuk memungkinkan akses web server secara aman tanpa perlu membuka port di router.',
+      technologies: ['Linux', 'Nginx', 'Cloudflare', 'Network Security', 'Server Administration'],
+      imageUrl: `${process.env.PUBLIC_URL}/images/projects/webserver.jpg`,
+    },
+    {
       title: 'Perhitungan Pohon Pinus Otomatis (YOLOv8)',
       description: 'Sistem deteksi dan perhitungan otomatis pohon pinus menggunakan model YOLOv8 dan data foto udara drone. Dilengkapi dengan web GUI untuk memudahkan pengguna.',
       technologies: ['YOLOv8', 'Python', 'Computer Vision', 'Web GUI'],
