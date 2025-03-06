@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.scss';
+import '../../styles/text.css';
 
 const Projects = () => {
   const projects = [
@@ -53,7 +54,7 @@ const Projects = () => {
               </div>
               <div className="project-card__content">
                 <h3>{project.title}</h3>
-                <p>{project.description}</p>
+                <p className="text-justify">{project.description}</p>
                 <div className="project-card__tech">
                   {project.technologies.map((tech, i) => (
                     <span key={i} className="tech-tag">{tech}</span>
