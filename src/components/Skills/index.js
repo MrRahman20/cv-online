@@ -58,7 +58,7 @@ const Skills = () => {
         <h2 className="section-title">Skills</h2>
         <div className="skills__grid">
           <div className="skills__category">
-            <h3>Programing & AI</h3>
+            <h3>Programming & AI</h3>
             <ul>
               {skills.programming.map((skill, index) => (
                 <li key={index}>{skill}</li>
