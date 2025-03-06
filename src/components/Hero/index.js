@@ -17,7 +17,7 @@ const Hero = () => {
     <section className="hero" id="home">
       <div className="container hero__content">
         <div className="hero__profile">
-          <img src="/images/profile/foto-profile.jpg" alt="Muhammad Ruhiyatna Rahman" />
+          <img src="/cv-online/images/profile/foto-profile.jpg" alt="Muhammad Ruhiyatna Rahman" />
         </div>
         <h1>Muhammad Ruhiyatna Rahman</h1>
         <h2>Software Developer | Network Engineer | GIS Analyst | AI-ML Engineer</h2>
