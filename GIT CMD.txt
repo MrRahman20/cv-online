@@ -1,0 +1,14 @@
+# Pindah ke direktori proyek
+cd d:\Source\CV_ONLINE
+
+# Tambahkan semua perubahan
+git add .
+
+# Buat commit dengan pesan
+git commit -m "Update website content"
+
+# Push ke branch main/master
+git push origin main
+
+# Deploy ke GitHub Pages
+npm run deploy
