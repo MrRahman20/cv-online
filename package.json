@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "homepage": "https://mrrahman20.github.io/cv-online",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrRahman20/cv-online.git"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
