@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/cv-online/static/css/main.5c14dc1c.css",
-    "main.js": "/cv-online/static/js/main.c3733a13.js",
+    "main.css": "/cv-online/static/css/main.46ac0c6e.css",
+    "main.js": "/cv-online/static/js/main.2e0aef2b.js",
     "index.html": "/cv-online/index.html",
-    "main.5c14dc1c.css.map": "/cv-online/static/css/main.5c14dc1c.css.map",
-    "main.c3733a13.js.map": "/cv-online/static/js/main.c3733a13.js.map"
+    "main.46ac0c6e.css.map": "/cv-online/static/css/main.46ac0c6e.css.map",
+    "main.2e0aef2b.js.map": "/cv-online/static/js/main.2e0aef2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c14dc1c.css",
-    "static/js/main.c3733a13.js"
+    "static/css/main.46ac0c6e.css",
+    "static/js/main.2e0aef2b.js"
   ]
 }
