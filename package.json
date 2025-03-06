@@ -2,7 +2,7 @@
   "name": "cv-online",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://mrrahman20.github.io/cv-online",
+  "homepage": "https://mrrahman20.github.io/cv-online/",
   "repository": {
     "type": "git",
     "url": "https://github.com/MrRahman20/cv-online.git"
@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b gh-pages -d build"
   },
   "browserslist": {
     "production": [
