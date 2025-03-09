@@ -79,14 +79,9 @@
           li {
             margin-bottom: 4px;
             line-height: 1.4;
-            text-align: justify;
           }
         }
       }
-    }
-
-    p {
-      text-align: justify;
     }
   }
 
@@ -123,7 +118,6 @@
     .description {
       font-size: 0.9rem;
       margin-bottom: $spacing-sm;
-      text-align: justify;
     }
 
     .date, .year {

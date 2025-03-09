@@ -39,6 +39,12 @@ const Projects = () => {
       description: 'Analisis komprehensif kondisi lingkungan Kota Padang menggunakan citra Landsat 8 dan Google Earth Engine. Menghitung indeks NDVI, NDBI, NDWI, dan NDDI untuk analisis vegetasi, urbanisasi, air, dan kekeringan.',
       technologies: ['Google Earth Engine', 'Remote Sensing', 'GIS', 'Spatial Analysis', 'Landsat 8'],
       imageUrl: `${process.env.PUBLIC_URL}/images/projects/padang-analysis.jpg`,
+    },
+    {
+      title: 'MikroTik Script Generator',
+      description: 'Tool untuk menghasilkan script konfigurasi MikroTik secara otomatis berdasarkan input parameter yang diberikan. Memudahkan proses konfigurasi router MikroTik dengan mengotomatisasi pembuatan script.',
+      technologies: ['JavaScript', 'MikroTik RouterOS','Vue.js', 'Web GUI'],
+      imageUrl: `${process.env.PUBLIC_URL}/images/projects/mikrotik-script.jpg`,
     }
   ];
 
@@ -60,6 +66,20 @@ const Projects = () => {
                     <span key={i} className="tech-tag">{tech}</span>
                   ))}
                 </div>
+                {project.features && (
+                  <ul className="features">
+                    {project.features.map((feature, idx) => (
+                      <li key={idx}>{feature}</li>
+                    ))}
+                  </ul>
+                )}
+                {project.github && (
+                  <div className="links">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-link">
+                      GitHub Repository
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}

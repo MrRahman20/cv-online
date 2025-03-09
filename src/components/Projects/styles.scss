@@ -6,6 +6,43 @@
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: $spacing-lg;
     margin-top: $spacing-lg;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    padding: $spacing-md;
+    border-radius: 8px;
+    background: rgba($primary-color, 0.05);
+    margin-bottom: $spacing-lg;
+    border: 1px solid rgba($primary-color, 0.1);
+
+    h3 {
+      font-size: 1.5rem;
+      color: $primary-color;
+      margin-bottom: $spacing-sm;
+    }
+
+    .description {
+      margin-bottom: $spacing-md;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .technologies {
+      margin-bottom: $spacing-md;
+      
+      .tech-tag {
+        display: inline-block;
+        padding: 4px 12px;
+        background: $primary-color;
+        color: white;
+        border-radius: 16px;
+        font-size: 0.9rem;
+        margin-right: 8px;
+        margin-bottom: 8px;
+      }
+    }
   }
 }
 
@@ -54,6 +91,7 @@
       color: $text-color;
       line-height: 1.7;
       margin-bottom: $spacing-md;
+      text-align: justify;
     }
   }
 
@@ -126,6 +164,33 @@
 
         &:hover {
           color: lighten($dark-primary, 10%);
+        }
+      }
+    }
+  }
+
+  .projects {
+    &__item {
+      background: $dark-surface;
+      border-color: rgba($dark-text, 0.1);
+
+      h3 {
+        color: $dark-primary;
+      }
+
+      .description, .features li {
+        color: $dark-text;
+      }
+
+      .tech-tag {
+        background: $dark-primary;
+      }
+
+      .github-link {
+        background: $dark-primary;
+
+        &:hover {
+          background: darken($dark-primary, 10%);
         }
       }
     }
