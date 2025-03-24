@@ -1,14 +1,25 @@
 # Pindah ke direktori proyek
 cd d:\Source\CV_ONLINE
 
+# Inisialisasi Git (jika belum ada)
+git init
+
 # Tambahkan semua perubahan
 git add .
 
 # Buat commit dengan pesan
 git commit -m "Update website content"
 
-# Push ke branch main/master
-git push origin main
+# Tambahkan remote repository (hapus dulu jika sudah ada)
+git remote remove origin 2>nul
+git remote add origin https://github.com/MrRahman20/cv-online.git
+
+# Pastikan berada di branch main
+git branch
+git checkout -b main
+
+# Push ke GitHub (gunakan -u saat pertama kali push)
+git push -u origin main
 
 # Deploy ke GitHub Pages
 npm run deploy

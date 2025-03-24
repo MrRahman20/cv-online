@@ -9,7 +9,7 @@ const About = () => {
         <h2 className="section-title">About Me</h2>
         <div className="about__content">
           <div className="about__text">
-            <p className="text-justify">Seorang profesional di bidang teknologi dan jaringan dengan keahlian dalam manajemen infrastruktur IT, pengembangan perangkat lunak, serta analisis data geospasial.</p>
+            <p className="text-justify">Seorang fresh graduate dengan pengalaman di bidang teknologi dan jaringan komputer. Memiliki keahlian dalam manajemen infrastruktur IT, pengembangan perangkat lunak, serta analisis data geospasial.</p>
             <p className="text-justify">Berpengalaman sebagai Network Engineer, Prompt Engineer, dan GIS Analyst, dengan rekam jejak membangun infrastruktur internet komunitas serta mengembangkan solusi berbasis AI dan pemrograman.</p>
             <p className="text-justify">Adaptif, inovatif, dan berorientasi pada efisiensi serta pengembangan teknologi modern.</p>
           </div>
